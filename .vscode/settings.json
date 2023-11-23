@@ -1,0 +1,31 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "driver": "CockroachDB",
+            "name": "spacsone1-defaultdb",
+            "connectString": "postgresql://space:CoiExS2MUuzyvWl9eFdlOA@firm-amoeba-7306.8nk.cockroachlabs.cloud:26257/defaultdb"
+        },
+        {
+            "previewLimit": 50,
+            "server": "firm-amoeba-7306.8nk.cockroachlabs.cloud",
+            "driver": "CockroachDB",
+            "name": "spacsone1-defaultdb",
+            "database": "defaultdb",
+            "username": "space",
+            "connectString": "postgresql://space:CoiExS2MUuzyvWl9eFdlOA@firm-amoeba-7306.8nk.cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full",
+            "password": "CoiExS2MUuzyvWl9eFdlOA"
+        },
+        {
+            "previewLimit": 50,
+            "server": "firm-amoeba-7306.8nk.cockroachlabs.cloud@firm-amoeba-7306.8nk.cockroachlabs.cloud",
+            "port": 26257,
+            "driver": "PostgreSQL",
+            "name": "spacsone1-defaultdb-postgres",
+            "database": "defaultdb",
+            "username": "space",
+            "password": "CoiExS2MUuzyvWl9eFdlOA"
+        }
+    ]
+}
