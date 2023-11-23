@@ -1,7 +1,7 @@
 const sequelize = require("../dbConnection").sequelize;
 const {DataTypes} = require("sequelize");
 
-const Posts = sequelize.define(
+const Notes = sequelize.define(
     "Notes", 
     {
         id : {
@@ -21,3 +21,9 @@ const Posts = sequelize.define(
         }
     }
 );
+
+Notes.sync();
+
+module.exports = {
+    Notes
+}

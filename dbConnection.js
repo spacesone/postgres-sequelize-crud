@@ -1,7 +1,8 @@
 const Sequelize = require("sequelize");
 
+require("dotenv").config();
 
-const sequelize = new Sequelize("postgresql://space:CoiExS2MUuzyvWl9eFdlOA@firm-amoeba-7306.8nk.cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full", {
+const sequelize = new Sequelize(process.env.DATABASE_URI, {
     dialect : "postgres"
 });
 

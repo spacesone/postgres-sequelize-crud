@@ -1,10 +1,11 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "database_development",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "space",
+    "password": "CoiExS2MUuzyvWl9eFdlOA",
+    "database": "defaultdb",
+    "host": "firm-amoeba-7306.8nk.cockroachlabs.cloud",
+    "port" : 26257,
+    "dialect": "postgres"
   },
   "test": {
     "username": "root",
