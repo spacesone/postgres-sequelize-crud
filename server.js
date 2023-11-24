@@ -1,8 +1,13 @@
 const express = require("express");
 const sequelize = require("./dbConnection").sequelize;
 const app = express();
+const bodyParser = require("body-parser");
 
 const PORT = 5000;
+
+app.use(bodyParser.urlencoded({extended : false}));
+app.use(express.urlencoded({extended : true}));
+app.use(express.json())
 
 const connect = async () => {
     try {
@@ -13,7 +18,7 @@ const connect = async () => {
     }
 }
 
-app.use('/api/', require('./routes/notes'));
+app.use('/api/v1/', require('./api/v1/notesApi.js'));
 
 app.get('/', (req, res) => {
     res.status(200).json({
