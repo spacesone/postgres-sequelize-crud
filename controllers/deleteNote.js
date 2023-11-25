@@ -10,8 +10,6 @@ const deleteNote = async (req, res) => {
         })
     }
 
-        
-        
         await Notes.destroy({
             where : {
                 id : noteID
